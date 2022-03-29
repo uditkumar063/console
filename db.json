@@ -1,0 +1,208 @@
+{
+    "fieldconfig": {
+      "pageSetup": {
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "id",
+            "label": "Id",
+            "placeholder": "Id",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "date",
+            "name": "processDate",
+            "label": "Process Date",
+            "placeholder": "Process Date",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "layoutName",
+            "label": "Layout Name",
+            "placeholder": "Layout Name",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "pageName",
+            "label": "Page Name",
+            "placeholder": "Page Name",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldName",
+            "label": "Field Name",
+            "placeholder": "Field Name",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldType",
+            "label": "Field Type",
+            "placeholder": "Field Type",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldLabel",
+            "label": "Field Label",
+            "placeholder": "Field Label",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldPlaceHolder",
+            "label": "Field Placeholder",
+            "placeholder": "Field Placeholder",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldLength",
+            "label": "Field Length",
+            "placeholder": "fieldLength",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "text",
+            "name": "fieldDefaultValue",
+            "label": "Field Default Value",
+            "placeholder": "Field Default Value",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          },
+          {
+            "type": "radiobutton",
+            "name": "isRequiredField",
+            "label": "Is Required Field ",
+            "placeholder": "Is Field Required",
+            "subLabel1": "Yes",
+            "subLabel2": "No",
+            "subLabel1Value": "Y",
+            "subLabel2Value": "N",
+            "defaultValue": "Y",
+            "comment": "value and id should come while loading data,make name unique while loading data in loop"
+          }
+        ],
+        "validations": [
+          {
+            "name": "fieldName",
+            "validation": [
+              {
+                "type": "length",
+                "minLength": 1,
+                "maxLength": 20,
+                "error": "Field Name length shoud be in between 1 to 20"
+              },
+              {
+                "type": "regex",
+                "pattern": "",
+                "error": "Field Name should not have special character"
+              }
+            ]
+          },
+          {
+            "name": "layoutName",
+            "validation": [
+              {
+                "type": "length",
+                "minLength": 1,
+                "maxLength": 20,
+                "error": "Layout Name length shoud be in between 1 to 20"
+              }
+            ]
+          },
+          {
+            "name": "pageName",
+            "validation": [
+              {
+                "type": "length",
+                "minLength": 1,
+                "maxLength": 20,
+                "error": "Page Name length shoud be in between 1 to 20"
+              }
+            ]
+          },
+          {
+            "name": "fieldType",
+            "validation": [
+              {
+                "type": "length",
+                "minLength": 1,
+                "error": "Field type should not be empty"
+              },
+              {
+                "type": "valueEnum",
+                "values": [
+                  "text",
+                  "date",
+                  "autocomplete",
+                  "drawer",
+                  "button",
+                  "buttonGroup",
+                  "checkbox",
+                  "radiobutton",
+                  "rating",
+                  "select",
+                  "slider",
+                  "switch",
+                  "transferList",
+                  "toggleButton"
+                ],
+                "error": "Field type is not valid"
+              }
+            ]
+          },
+          {
+            "name": "fieldLabel",
+            "validation": [
+              {
+                "type": "length",
+                "minLength": 1,
+                "maxLength": 20,
+                "error": "Field Label length shoud be in between 1 to 20"
+              },
+              {
+                "type": "regex",
+                "pattern": "",
+                "error": "Field Label should not have special character"
+              }
+            ]
+          }
+        ],
+        "validationFieldGroup": {
+          "condtion": "onValidationsClick",
+          "fields": [
+            {
+              "type": "text",
+              "name": "fieldName",
+              "label": "Field Name",
+              "placeholder": "Field Name",
+              "defaultValue": "",
+              "condition": "",
+              "comment": "value and id should come while loading data,make name unique while loading data in loop"
+            },
+            {
+              "type": "text",
+              "name": "errorType",
+              "label": "Error Type",
+              "placeholder": "Error Type",
+              "defaultValue": "",
+              "condition": "",
+              "comment": "value and id should come while loading data,make name unique while loading data in loop"
+            },
+            {
+              "type": "text",
+              "name": "error",
+              "label": "Error Message",
+              "placeholder": "Error Message",
+              "defaultValue": "",
+              "condition": "",
+              "comment": "value and id should come while loading data,make name unique while loading data in loop"
+            }
+          ]
+        }
+      }
+    }
+  }
