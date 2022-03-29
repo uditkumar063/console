@@ -1,4 +1,5 @@
 {
+ "console":{
     "fieldconfig": {
       "pageSetup": {
         "fields": [
@@ -206,3 +207,4 @@
       }
     }
   }
+}
