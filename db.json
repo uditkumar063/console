@@ -206,7 +206,7 @@
               "type": "button",
               "name": "deleteErrorValidation",
               "label": "delete",
-              "onClick": ""
+              "onClick": "",
               "comment": "value and id should come while loading data,make name unique while loading data in loop"
             }
           ]
